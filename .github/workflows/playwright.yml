@@ -4,8 +4,7 @@ on: [push]
 jobs:
  init:
     runs-on: ubuntu-latest
-       - run: npm install
-       - run: npm run tests
+       - run: npm run e2e
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
